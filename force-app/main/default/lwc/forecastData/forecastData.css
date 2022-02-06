@@ -1,0 +1,9 @@
+/* .header table>thead .slds-cell-fixed.slds-has-button-menu, .header table>thead .slds-cell-fixed.slds-has-button-menu:hover{
+    background: antiquewhite;
+  } */
+  .bold-text{
+    font-weight: bold;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }

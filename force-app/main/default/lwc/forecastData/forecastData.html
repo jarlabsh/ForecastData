@@ -1,0 +1,19 @@
+<template>
+    <template if:true={lineItemData}>
+        <div class="slds-clearfix">
+        <div class="slds-float_right slds-var-p-around_medium">
+        <lightning-button-group>
+            <lightning-button  onclick={handleHover} label="VIEW"></lightning-button>
+            <lightning-button-menu data-id="btn" onselect={handleOnselect} menu-alignment="auto" alternative-text="Show menu">
+                <lightning-menu-item label="Show full attributes" value="All"></lightning-menu-item>
+                <lightning-menu-item label="Show monthly summary" value="Summary"></lightning-menu-item>
+            </lightning-button-menu>
+        </lightning-button-group>
+    </div>
+</div>
+        <div class="slds-scrollable_x" style="width: max-content;">
+        <lightning-datatable data={lineItemData} columns={columns} key-field="productFLIId" column-widths-mode="fixed" hide-checkbox-column resize-column-disabled="true">
+        </lightning-datatable>
+    </div>
+    </template>
+</template>
